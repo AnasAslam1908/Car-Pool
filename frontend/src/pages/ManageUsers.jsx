@@ -44,8 +44,9 @@ const ManageUsers = () => {
 
     return (
         <div className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Manage Users</h2>
-
+            <div className="flex justify-center">
+                <h2 className="text-4xl text-white font-bold bg-black  mb-8">Manage Users</h2>
+            </div>
             {error && (
                 <div className="bg-red-100 text-red-700 px-4 py-2 rounded mb-4 border border-red-300">
                     {error}
@@ -61,7 +62,7 @@ const ManageUsers = () => {
                 <p className="text-gray-600">No users found.</p>
             ) : (
                 <table className="table-auto w-full bg-white border border-gray-200 rounded shadow-md">
-                    <thead className="bg-gray-100">
+                    <thead className="bg-gray-300">
                     <tr>
                         <th className="px-4 py-2 border text-left">User ID</th>
                         <th className="px-4 py-2 border text-left">Name</th>

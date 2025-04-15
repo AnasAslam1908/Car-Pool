@@ -35,7 +35,9 @@ const ManageBookingsByAdmin = () => {
 
     return (
         <div className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Manage Bookings</h2>
+            <div className="flex justify-center">
+                <h2 className="text-4xl text-white font-bold bg-black  mb-8">Manage Bookings</h2>
+            </div>
             {error && <p className="text-red-500 mb-4">{error}</p>}
 
             {bookings.length === 0 ? (

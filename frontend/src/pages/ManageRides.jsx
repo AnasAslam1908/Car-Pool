@@ -35,7 +35,9 @@ const ManageRides = () => {
 
     return (
         <div className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Manage Rides</h2>
+            <div className="flex justify-center">
+                <h2 className="text-4xl text-white font-bold bg-black  mb-8">Manage Rides</h2>
+            </div>
             {error && <p className="text-red-500 mb-4">{error}</p>}
 
             {rides.length === 0 ? (
